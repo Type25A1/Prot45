@@ -1,0 +1,139 @@
+nav {
+  position: absolute;
+  display: flex;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 7.9%;
+  width: 100%;
+}
+nav .logo {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+}
+nav .logo h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Scope One", serif;
+  font-size: 33px;
+  cursor: pointer;
+  opacity: 100%;
+}
+nav .logo h1:hover {
+  opacity: 80%;
+}
+nav .navlinks {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+  height: 100%;
+}
+nav .navlinks li a {
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+nav .navlinks li a:hover {
+  text-shadow: 1px 0px 10px #969696;
+}
+
+#hamburger-content {
+  position: absolute;
+  right: 0;
+  top: 8%;
+  background-color: #F5F5F5;
+  height: 100%;
+  box-shadow: 0 16px 18px 10px rgba(0, 0, 0, 0.43);
+  width: 8.3%;
+  visibility: hidden;
+}
+#hamburger-content .menu-links {
+  position: absolute;
+  left: 2%;
+  top: 1%;
+}
+#hamburger-content .menu-links li a {
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.menu-btn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border: 3px solid ##000000; */
+}
+
+.menu-btn__burger {
+  width: 35px;
+  height: 4px;
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after,
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(-35px, 35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+span {
+  text-decoration: underline;
+}
