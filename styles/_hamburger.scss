@@ -30,7 +30,7 @@
   width: 80px;
   height: 80px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   /* border: 3px solid ##000000; */
 }
 
@@ -52,7 +52,7 @@
   background: #000000;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-btn__burger::before {
